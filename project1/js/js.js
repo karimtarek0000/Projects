@@ -15,7 +15,7 @@ var navbar = document.querySelector(".navigation-nav-nav"),
   ),
   footerYear = document.getElementById("year"); // HEIGHT HEADER
 
-var heightVH = function () {
+var heightVH = function() {
   var totalAllNav =
       navInfo.clientHeight + navContact.clientHeight + navigation.clientHeight,
       total = document.documentElement.clientHeight - totalAllNav;
