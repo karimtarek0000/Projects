@@ -23,8 +23,6 @@ function heightVH() {
   header.style.height = "".concat(total, "px");
 };
 
-heightVH(); 
-
 // RESIZE HEIGHT IN WINDOW
 window.onresize = heightVH; // CLICK BUTTON TOGGLE CLASS
 
