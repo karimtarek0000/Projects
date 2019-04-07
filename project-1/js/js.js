@@ -127,7 +127,10 @@ $(function() {
   var navbarItem = $('.navigation-nav-nav > li > a');
 
   // CLICK SMOTHLY SCROLL
-  navbarItem.on('click', function() {
+  navbarItem.on('click', function(e) {
+
+      // PREVENT DEFAULT
+      e.preventDefault();
 
       $('html, body').animate({
 
@@ -153,4 +156,3 @@ $(function() {
 
 
 });
-
