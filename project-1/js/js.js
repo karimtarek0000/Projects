@@ -118,3 +118,39 @@ function validationForm(e) {
     message.textContent = "correct";
   }
 }
+
+
+// JQUERY
+$(function() {
+
+  // SCROLL SMOTHLY AND SYN SECTION TOP
+  var navbarItem = $('.navigation-nav-nav > li > a');
+
+  // CLICK SMOTHLY SCROLL
+  navbarItem.on('click', function() {
+
+      $('html, body').animate({
+
+          scrollTop: $('#' + $(this).data('target')).offset().top
+
+      }, 2000);
+
+  });
+
+  // EACH ADD CLASS ACTIVE AND REMOVE CLASS ACTIVE WITH SIBLINGS
+  $(window).on('scroll', function() {
+
+      navbarItem.each(function() {
+
+          $(window).scrollTop() > $('#' + $(this).data('target')).offset().top ? 
+
+          $(this).parent().addClass('active').end().parent().siblings().removeClass('active') : false;
+
+      });
+      
+  });
+
+
+
+});
+

@@ -175,27 +175,27 @@
                     <ul class="navigation-nav-nav list-unstyled">
 
                         <li class="navigation-nav-items active">
-                            <a href="#" class="navigation-nav-link">home</a>
+                            <a href="#" class="navigation-nav-link" data-target="home">home</a>
                         </li>
 
                         <li class="navigation-nav-items">
-                            <a href="#" class="navigation-nav-link">What about ISAMA</a>
+                            <a href="#" class="navigation-nav-link" data-target="what-about">What about ISAMA</a>
                         </li>
 
                         <li class="navigation-nav-items">
-                            <a href="#" class="navigation-nav-link">What we do ?</a>
+                            <a href="#" class="navigation-nav-link" data-target="what-we">What we do ?</a>
                         </li>
 
                         <li class="navigation-nav-items">
-                            <a href="#" class="navigation-nav-link">Our Projects</a>
+                            <a href="#" class="navigation-nav-link" data-target="our-projects">Our Projects</a>
                         </li>
 
                         <li class="navigation-nav-items">
-                            <a href="#" class="navigation-nav-link">Excellent Team</a>
+                            <a href="#" class="navigation-nav-link" data-target="excellent-team">Excellent Team</a>
                         </li>
 
                         <li class="navigation-nav-items">
-                            <a href="#" class="navigation-nav-link">Contact</a>
+                            <a href="#" class="navigation-nav-link" data-target="content">Contact</a>
                         </li>
 
                     </ul>
@@ -236,7 +236,7 @@
     <!-- -------------------------------------------------------------------------------- -->
 
     <!-- START HEADER -->
-    <header class="header">
+    <header class="header" id="home">
 
         <!-- START CONTAINER -->
         <div class="container">
@@ -267,7 +267,7 @@
     <main>
 
         <!-- START SCETION ONE -->
-        <section class="section-one">
+        <section class="section-one" id="what-about">
 
             <!-- START CONTAINER -->
             <div class="container">
@@ -353,7 +353,7 @@
         <!-- END SCETION ONE -->
 
         <!-- START SECTION TWO -->
-        <section class="section-what-we">
+        <section class="section-what-we" id="what-we">
 
             <!-- START CONTAINER -->
             <div class="container">
@@ -584,7 +584,7 @@
         <!-- END SECTION TWO -->
 
         <!-- START SECTION THREE -->
-        <section class="section-our-project">
+        <section class="section-our-project" id="our-projects">
 
             <!-- START CONTAINER -->
             <div class="container">
@@ -830,7 +830,7 @@
         <!-- END SECTION THREE -->
 
         <!-- START SECTION FOURE -->
-        <section class="section-meet-our-team">
+        <section class="section-meet-our-team" id="excellent-team">
             <!-- START CONTAINER -->
             <div class="container">
 
@@ -1049,7 +1049,7 @@
     <!-- END MAIN -->
 
     <!-- START FOOTER -->
-    <footer class="footer">
+    <footer class="footer" id="content">
 
         <!-- START FOOTER MAP -->
         <div class="footer-map">
@@ -1120,6 +1120,9 @@
     </footer>
     <!-- END FOOTER -->
 
+
+    <!-- CDN JQUERY -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
     <!-- MAIN JAVASCRIPT -->
     <script src="js/js.js"></script>
